@@ -1,6 +1,6 @@
 {
+  "homepage": "https://tetsutlee.github.io/react-news-app/",
   "name": "react-news-app",
-  "homepage": "https://tetsuTCL.github.io/react-news-app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,10 +14,9 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "rm": "rm -rf docs",
-    "mv": "mv build docs",
-    "git": "git add . && git commit && git push origin master",
-    "deploy": "npm run rm && npm run build && npm run mv && npm run git",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
